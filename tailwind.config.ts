@@ -12,6 +12,17 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        'signupBg':"url('/app/Assets/signUp.jpeg')",
+        'loginBg':"url('/app/Assets/loginBg.jpeg')",
+      },
+      fontFamily:{
+        'default':["RobotoMono"],
+      },
+      gridTemplateColumns:{
+          'influencer':'2fr 1fr 1fr ',
+          'allInfluencers':'1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr'
+      },
     },
   },
   plugins: [],
