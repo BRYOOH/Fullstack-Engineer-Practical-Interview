@@ -1,7 +1,6 @@
+"use client";
 import Image from "next/image"
 import tracker from '@/app/Assets/tracker.jpeg'
-
-import { useNavigate } from 'react-router-dom'
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
