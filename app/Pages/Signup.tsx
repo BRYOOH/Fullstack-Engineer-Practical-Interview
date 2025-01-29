@@ -26,7 +26,7 @@ const Signup = () => {
 
   const signup= async()=>{
   if(validateInputs()){
-    await fetch ('http://localhost:4000/signup',{
+    await fetch ('https://fullstack-engineer-practical-interview.onrender.com/signup',{
 
         method:'POST',
         headers:{

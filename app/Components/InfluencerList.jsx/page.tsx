@@ -13,7 +13,7 @@ const InfluencerList:React.FC= () => {
   
   const handleInfluencers = async()=>{
     try {
-      const response = await fetch("http://localhost:4000/getInfluencers");
+      const response = await fetch("https://fullstack-engineer-practical-interview.onrender.com/getInfluencers");
       const data = await response.json();
   
       console.log("Received Data:", data);

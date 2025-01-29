@@ -17,7 +17,7 @@ const GetInfluencers = () => {
   
   const handleInfluencers = async()=>{
     try {
-      const response = await fetch("http://localhost:4000/getAll");
+      const response = await fetch("https://fullstack-engineer-practical-interview.onrender.com/getAll");
       const data = await response.json();
   
       console.log("Received Data:", data);
@@ -39,7 +39,7 @@ const GetInfluencers = () => {
 
   const toggleAccepted = async (influencerId: string) => {
     try {
-      const response = await fetch(`http://localhost:4000/patchInfluencer/${influencerId}`, {
+      const response = await fetch(`https://fullstack-engineer-practical-interview.onrender.com/patchInfluencer/${influencerId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

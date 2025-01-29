@@ -27,7 +27,7 @@ const Login = () => {
   const login = async()=>{
 
     if(validateInputs()){
-        await fetch ('http://localhost:4000/login',{
+        await fetch ('https://fullstack-engineer-practical-interview.onrender.com/login',{
 
             method:'POST',
             headers:{
