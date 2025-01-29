@@ -3,6 +3,7 @@ import tracker from '@/app/Assets/tracker.jpeg'
 
 import { useNavigate } from 'react-router-dom'
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 
 const Links =[
@@ -18,7 +19,7 @@ const Links =[
 ]
 
 const Navbar = () => {
-  const navigate= useNavigate();
+  const router = useRouter();
   return (
     <div className="py-10 flex items-center justify-center">
       <div className="flex z-50 fixed backdrop-blur items-center justify-center gap-6 text-lg border border-lime-500 rounded-full p-2">
@@ -33,8 +34,8 @@ const Navbar = () => {
           ))}
         </div>
         <div className=" flex gap-2 items-center">
-          <button className="bg-purple-500 p-2 rounded-3xl" onClick={()=>navigate('/login')}>Login</button>
-          <button className="bg-purple-500 p-2 rounded-3xl" onClick={()=>navigate('/signup')}>Signup</button>
+          <button className="bg-purple-500 p-2 rounded-3xl" onClick={()=>router.push('/login')}>Login</button>
+          <button className="bg-purple-500 p-2 rounded-3xl" onClick={()=>router.push('/signup')}>Signup</button>
         </div>
       </div>
     </div>
