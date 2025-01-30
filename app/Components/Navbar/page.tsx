@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="flex z-50 fixed backdrop-blur items-center justify-center gap-6 text-lg border border-lime-500 rounded-full p-2">
         <div className="flex items-center gap-2">
           <Image src={tracker} alt="tracker"
-          className="w-56 h-56 rounded-full"/>
+          className="w-[56px] h-[56px] rounded-full"/>
           <span className="uppercase text-lime-500">Campaign Tracker</span>
         </div>
         <div className="flex gap-4 uppercase">
